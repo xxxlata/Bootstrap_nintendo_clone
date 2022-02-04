@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+
+nav ul{
+    font-size: 1.3rem;
+}
+
+nav li {
+    padding: 1rem 0;
+}
