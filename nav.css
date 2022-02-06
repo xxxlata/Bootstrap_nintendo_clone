@@ -12,7 +12,7 @@ nav ul{
 
 nav li {
     padding: 1rem 0;
-    width: 20%
+    width: 20%;
 }
 
 nav i{
@@ -54,3 +54,154 @@ nav li:hover {
     color: #e60012;
     cursor: grab;
 }
+#nintendo-s{
+    position: relative;
+}
+.hidden-s{
+    display: none;
+    position: absolute;
+    font-size: 15px;
+    color: black;
+    width: 100%;
+    height: auto;
+    top:4rem;
+    z-index: 1000;
+    background-color: rgba(247, 247, 247, 0.863);
+}
+
+.hidden-s li{
+    width: 100%;
+    text-align: start;
+}
+
+.hidden-s a {
+    text-decoration: none;
+    color: black;
+}
+
+#nintendo-3ds{
+    position: relative;
+}
+
+.hidden-3ds{
+    display: none;
+    position: absolute;
+    font-size: 15px;
+    color: black;
+    width: 100%;
+    height: auto;
+    top:4rem;
+    z-index: 1000;
+    background-color: rgba(247, 247, 247, 0.863);
+}
+
+.hidden-3ds li{
+    width: 100%;
+    text-align: start;
+}
+
+.hidden-3ds a {
+    text-decoration: none;
+    color: black;
+}
+
+#software{
+    position: relative;
+}
+
+.hidden-soft{
+    display: none;
+    position: absolute;
+    font-size: 15px;
+    color: black;
+    width: 100%;
+    height: auto;
+    top:4rem;
+    z-index: 1000;
+    background-color: rgba(247, 247, 247, 0.863);
+}
+
+.hidden-soft li{
+    width: 100%;
+    text-align: start;
+}
+
+.hidden-soft a {
+    text-decoration: none;
+    color: black;
+}
+
+#service{
+    position: relative;
+}
+
+.hidden-serv{
+    display: none;
+    position: absolute;
+    font-size: 15px;
+    color: black;
+    width: 100%;
+    height: auto;
+    top:4rem;
+    z-index: 1000;
+    background-color: rgba(247, 247, 247, 0.863);
+}
+
+
+.hidden-serv li{
+    width: 100%;
+    text-align: start;
+}
+
+.hidden-serv a {
+    text-decoration: none;
+    color: black;
+}
+
+#news{
+    position: relative;
+}
+
+.hidden-news{
+    display: none;
+    position: absolute;
+    font-size: 15px;
+    color: black;
+    width: 100%;
+    height: auto;
+    top:4rem;
+    z-index: 1000;
+    background-color: rgba(247, 247, 247, 0.863);
+}
+
+
+.hidden-news li{
+    width: 100%;
+    text-align: start;
+}
+
+.hidden-news a {
+    text-decoration: none;
+    color: black;
+}
+
+#nintendo-s:hover .hidden-s{
+    display: block;
+}
+
+#nintendo-3ds:hover .hidden-3ds{
+    display: block;
+}
+
+#software:hover .hidden-soft{
+    display: block;
+}
+
+#service:hover .hidden-serv{
+    display: block;
+}
+#news:hover .hidden-news{
+    display: block;
+}
+
+

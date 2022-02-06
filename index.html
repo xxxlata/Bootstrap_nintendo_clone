@@ -9,18 +9,59 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/dce981d912.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="main.css">
     <title>닌텐도</title>
 </head>
-<body>
+<body class="container-fluid">
     <nav class="row">
         <div id="logo" class="col-sm-2 text-center py-2"><a href=""><img src="img/nintendo_logo.png" alt=""></a></div>
         <div class="col-sm-8 border p-0">
             <ul class="d-flex text-center p-0 m-0">
-                <li class="border-end">Nintendo Switch</li>
-                <li class="border-end">닌텐도 3DS</li>
-                <li class="border-end">소프트웨어</li>
-                <li class="border-end">고객지원</li>
-                <li>News</li>
+                <li id="nintendo-s" class="border-end">Nintendo Switch
+                    <ul class="hidden-s p-2">
+                        <li class="row"><a href="">Nintendo Switch OLED <br>모델</a></li>
+                        <li><a href="">Nintendo Switch</a></li>
+                        <li><a href="">Nintendo Switch Lite</a></li>
+                        <li><a href="">기능 º 특징을 비교</a></li>
+                        <li><a href="">주변기기</a></li>
+                        <li><a href="">Nintendo Switch Online</a></li>
+                        <li><a href="">Nintendo 지킴이 Switch™</a></li>
+                        <li><a href="">닌텐도 e숍</a></li>
+                    </ul>
+                </li>
+                <li id="nintendo-3ds" class="border-end">닌텐도 3DS
+                    <ul class="hidden-3ds p-2">
+                        <li><a href="">닌텐도 3DS란?</a></li>
+                        <li><a href="">New 닌텐도 3DS XL</a></li>    
+                        <li><a href="">New 닌텐도 2DS XL</a></li>
+                        <li><a href="">기타 시리즈</a></li>
+                        <li><a href="">닌텐도e숍</a></li>
+                    </ul>
+                </li>
+                <li id="software" class="border-end">소프트웨어
+                    <ul class="hidden-soft p-2">
+                        <li><a href="">Nintendo Switch <br>소프트웨어</a></li>
+                        <li><a href="">닌텐도 3DS 소프트웨어</a></li>    
+                        <li><a href="">발매 예정 소프트웨어</a></li>
+                        <li><a href="">스마트폰용 앱</a></li>
+                    </ul>
+                </li>
+                <li id="service" class="border-end">고객지원
+                    <ul class="hidden-serv p-2">
+                        <li><a href="">Nintendo Switch 고객지원</a></li>
+                        <li><a href="">Nintendo Switch Online <br>서포트</a></li>    
+                        <li><a href="">닌텐도 3DS 고객지원</a></li>
+                        <li><a href="">네트워크 장애 발생 상황</a></li>
+                    </ul>
+                </li>
+                <li id="news" >News
+                    <ul class="hidden-news p-2">
+                        <li><a href="">News</a></li>
+                        <li><a href="">보도자료</a></li>    
+                        <li><a href="">알림</a></li>
+                        <li><a href="">이벤트</a></li>
+                    </ul>
+                </li>
             </div>
         </div>
         <div class="col-sm-2 py-2">
@@ -41,5 +82,52 @@
             </div>
         </div>
     </nav>
+    <section class="main-slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/nintendo-slide1.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="img/nintendo-slide2.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="img/nintendo-slide3.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="img/nintendo-slide4.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="img/nintendo-slide5.jpg" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section id="new-update" class="container">
+        <div class="d-flex justify-content-between">
+            <div id="title" class="d-flex align-items-center">
+                <h3>새롭게 알려드립니다</h3>
+                <span>News & Update</span>
+            </div>
+            <div id="plus">
+                <a href=""><i class="fas fa-plus"></i></a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
