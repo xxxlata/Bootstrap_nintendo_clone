@@ -1,6 +1,5 @@
-.container{
-    margin-top: 7rem;
-    margin-bottom: 1rem;
+#new-update{
+    margin: 7rem 7rem 1rem 7rem;
 }
 
 #title h3{
@@ -10,4 +9,34 @@
 
 #plus a{
     color: red;
+}
+
+
+#new-update img{
+    width: 100%;
+    height: auto;
+}
+
+.orange-line{
+    background-image:url(img/orange-line.gif);
+    background-size: cover;
+    width: 100%;
+    height: 7rem;
+    padding: 0;
+    margin: 0;
+}
+
+#game-title{
+    margin: 7rem 7rem 1rem 7rem;
+}
+
+#game-title img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:1196px) {
+    #new-update {
+        margin: 5rem 1rem 1rem 1rem;
+    }
 }
