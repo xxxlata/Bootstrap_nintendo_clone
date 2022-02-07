@@ -150,6 +150,16 @@
     font-weight: bolder;
 }
 
+.red-line{
+    width: 100%;
+    padding: 2rem 7rem;
+    background-color: #e60012;
+}
+.red-line i{
+    font-size: 2rem;
+    color: white;
+}
+
 @media screen and (max-width:1196px) {
     #new-update {
         margin: 5rem 1rem 1rem 1rem;
