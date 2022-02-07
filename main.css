@@ -1,5 +1,10 @@
 #new-update{
-    margin: 7rem 7rem 1rem 7rem;
+    margin: 7rem 7rem 4rem 7rem;
+}
+
+#title {
+    margin-bottom: 2rem;
+    overflow: hidden;
 }
 
 #title h3{
@@ -17,6 +22,26 @@
     height: auto;
 }
 
+#update-suv{
+    margin: 1rem 0;
+}
+
+#update-suv h6{
+    color: red;
+}
+
+#update-suv p{
+    height: 6rem;
+    width: 100%;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#update-suv span{
+    font-size: 12px;
+    color: gray;
+}
+
 .orange-line{
     background-image:url(img/orange-line.gif);
     background-size: cover;
@@ -28,15 +53,108 @@
 
 #game-title{
     margin: 7rem 7rem 1rem 7rem;
+    overflow: hidden;
 }
 
 #game-title img{
     width: 100%;
     height: auto;
+    overflow: hidden;
+}
+
+#game-suv{
+    margin: 1rem 0;
+}
+
+#game-suv h6{
+    color: red;
+}
+
+#game-suv p{
+    height: 5rem;
+    width: 100%;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#game-suv span{
+    font-size: 12px;
+    color: gray;
+}
+
+#game-title a{
+    position: relative;
+    overflow: hidden;
+}
+
+.red-box{
+    border-radius: 3px;
+    background-color: rgb(216, 3, 3);
+    color: white;
+    font-size: 10px;
+    font-weight: bolder;
+    padding: 2px 5px;
+    margin: 5px;
+}
+
+.k-box{
+    box-sizing: border-box;
+    border: 3px solid rgb(216, 3, 3);
+    border-radius: 3px;
+    padding: 1px 5px;
+    text-align: center;
+    line-height: 1rem;
+    font-size: small;
+    font-weight: bolder;
+    color:rgb(216, 3, 3);
+}
+
+#k-box span{
+    font-size: 1px;
+    color:rgb(216, 3, 3);
+}
+
+.new-label{
+    position: absolute;
+    z-index: 1000;
+    background-color: rgb(216, 3, 3);
+    color: white;
+    bottom: 3.4rem;
+    right: 14.8rem;
+    padding: 1rem 2rem 0.5rem 2rem;
+    transform: rotate(310deg);
+}
+
+.col-sm-6{
+    overflow: hidden;
+}
+
+.nintendo-banner{
+    margin:7rem;
+}
+
+.nintendo-banner>div{
+    margin-bottom: 1.5rem;
+}
+
+.nintendo-banner img{
+    width: 100%;
+    height: auto;
+}
+
+#easy-pesy {
+    margin-bottom: 2rem;
+}
+
+#easy-pesy h4{
+    font-weight: bolder;
 }
 
 @media screen and (max-width:1196px) {
     #new-update {
+        margin: 5rem 1rem 1rem 1rem;
+    }
+    #game-title {
         margin: 5rem 1rem 1rem 1rem;
     }
 }
