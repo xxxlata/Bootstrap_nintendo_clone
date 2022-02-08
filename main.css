@@ -237,8 +237,12 @@
 }
 
 .point-box {
-    width: 15px;
-    height: 5px;
+    position: absolute;
+    top: 0rem;
+    left: 7rem;
+    width: 24px;
+    height: 4px;
+    z-index: 1000;
     background-color: #e60012;
 }
 

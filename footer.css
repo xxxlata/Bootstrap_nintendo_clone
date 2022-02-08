@@ -1,3 +1,13 @@
 footer{
     background-color:rgba(226, 223, 223, 0.308);
 }
+
+#footer{
+    font-size: small;
+    color: gray;
+}
+
+.except{
+    font-size: smaller;
+    padding-top: 1rem;
+}
