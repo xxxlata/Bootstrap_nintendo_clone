@@ -13,10 +13,22 @@
     <link rel="stylesheet" href="footer.css">
     <title>Nintendo</title>
 </head>
-<body class="container-fluid">
-    <nav class="row">
-        <div id="logo" class="col-sm-2 text-center py-2"><a href=""><img src="img/nintendo_logo.png" alt=""></a></div>
-        <div class="col-sm-8 border p-0">
+<body>
+    <nav id="hidden-nav" class="justify-content-between">
+        <div>
+            <a href=""><img src="img/nintendo_logo.png" alt=""></a>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="d-flex">
+                <div><i class="fas fa-hamburger"></i></div>
+                <div><i class="fas fa-search"></i></div>
+            </div>
+            <div class="hidden-shop"><a href=""><i class="fas fa-shopping-basket"></i></a></div>
+        </div>
+    </nav>
+    <nav id="nav" class="d-flex align-items-center">
+        <div id="logo" class="text-center py-2"><a href=""><img src="img/nintendo_logo.png" alt=""></a></div>
+        <div id="nav-menu" class="border p-0">
             <ul class="d-flex text-center p-0 m-0">
                 <li id="nintendo-s" class="border-end">Nintendo Switch
                     <ul class="hidden-s p-2">
@@ -65,21 +77,19 @@
                 </li>
             </div>
         </div>
-        <div class="col-sm-2 py-2">
-            <div id="nav-last" class="row">
-                <div id="nav-download" class="col-sm-8">
-                    <a class=" d-flex justify-content-around align-items-center text-decoration-none" href="">
-                        <div class="text-center">
-                            <i class="fas fa-shopping-basket"></i>
-                        </div>
-                        <div class="text-center">다운로드<br>구입</div>
-                    </a>
-                </div>                
-                <div id="nav-search" class="col-sm-4 text-center border-bottom">
-                    <a href="">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div>
+        <div id="nav-last" class="d-flex align-items-center">
+            <div id="nav-download">
+                <a class=" d-flex justify-content-around align-items-center text-decoration-none" href="">
+                    <div class="text-center">
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <div class="text-center">다운로드<br>구입</div>
+                </a>
+            </div>                
+            <div id="nav-search" class="d-flex justify-content-center">
+                <a href="">
+                    <i class="fas fa-search"></i>
+                </a>
             </div>
         </div>
     </nav>
@@ -379,10 +389,40 @@
         </div>
     </div>
     <div id="easy-pesy" class="row text-center"><h4>쉽고 간편한 다운로드 버전으로도 즐길 수 있습니다.</h4></div>
-    <div class="d-flex justify-content-center">
-        <div><i class="fas fa-shopping-cart"></i>다운로드 구입하기</div>
-        <div><i class="far fa-credit-card"></i>Nintendo Switch / 닌텐도 3DS 닌텐도 선불 카드 안내</div>
-        <div><i class="fas fa-gamepad"></i>Nintendo Switch <br> 닌텐도 선불 번호 구입하기</div>
+    <div id="download-block" class="d-flex justify-content-center ">
+        <div class="download-block-a">
+            <a class="text-decoration-none d-flex align-items-center" href="">
+                <div class="bg-round">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div>
+                    다운로드 구입하기
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+        </div>
+        <div class="download-block-a">
+            <a class="text-decoration-none d-flex align-items-center" href="">
+                <div class="bg-round">
+                    <i class="far fa-credit-card"></i>
+                </div>
+                <div>
+                    Nintendo Switch / 닌텐도 3DS 닌텐도 선불 카드 안내
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+        </div>
+        <div class="download-block-a">
+            <a class="text-decoration-none d-flex align-items-center" href="">
+                <div class="bg-round">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div>
+                    Nintendo Switch 닌텐도 선불 번호 구입하기
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+        </div>
     </div>
     <div class="red-line">
         <div class="d-flex justify-content-between">
@@ -392,32 +432,46 @@
             <div><i class="fas fa-chevron-circle-up"></i></div>
         </div>
     </div>
-    <section>
-        <div class="link">
-
+    <section class="container">
+        <div id="links" class="d-flex justify-content-between align-items-center">
+            <div class="sns-links d-flex">
+                <div><a href=""><img src="img/youtube-icon.png" alt=""></a></div>
+                <div><a href=""><img src="img/naver-s-icon.png" alt=""> </a></div>
+                <div><a href=""><img src="img/facebook-icon.png" alt=""></a></div>
+                <div><a href=""><img src="img/twitter-icon.png" alt=""></a></div>
+            </div>
+            <div class="my-icon">
+                <a href=""><img src="img/my-nintendo-icon.png" alt=""></a>
+            </div>
+            <div class="amiibo-icon">
+                <a href=""><img src="img/amiibo-icon.png" alt=""></a>
+            </div>
         </div>
-        <div class="row">
-            <ul class="col-sm-3">한국닌텐도
-                <li>- 회사개요</li>
-                <li>-찾아오시는 길</li>
+        <div id="service-menu" class="row">
+            <ul class="col-sm-3 text-center">한국닌텐도
+                <div class="point-box"></div>
+                <li><a href="">- 회사개요</a></li>
+                <li><a href="">-찾아오시는 길</a></li>
             </ul>
-            <ul class="col-sm-3">본체 / amiibo
-                <li>-Nintendo Switch</li>
-                <li>-New 닌텐도 3DS XL</li>
-                <li>-New 닌텐도 2DS XL</li>
-                <li>-amiibo</li>
-            </ul>
-            <ul class="col-sm-3">소프트웨어
-
-                <li>-Nintendo Switch 소프트웨어</li>
-                <li>-닌텐도 3DS 소프트웨어</li>
-                <li>-발매 예정 소프트웨어</li>
-                <li>-스마트폰용 앱</li>
-            </ul>
-            <ul class="col-sm-3">고객지원
+            <ul class="col-sm-3 text-center">본체 / amiibo
+                <div class="point-box"></div>
                 <li><a href="">-Nintendo Switch</a></li>
-                <li>-닌텐도 3DS</li>
-                <li>-고객지원 홈페이지</li>
+                <li><a href="">-New 닌텐도 3DS XL</a></li>
+                <li><a href="">-New 닌텐도 2DS XL</a></li>
+                <li><a href="">-amiibo</a></li>
+            </ul>
+            <ul class="col-sm-3 text-center">소프트웨어
+                <div class="point-box"></div>
+                <li><a href="">-Nintendo Switch 소프트웨어</a></li>
+                <li><a href="">-닌텐도 3DS 소프트웨어</a></li>
+                <li><a href="">-발매 예정 소프트웨어</a></li>
+                <li><a href="">-스마트폰용 앱</a></li>
+            </ul>
+            <ul class="col-sm-3 text-center">고객지원
+                <div class="point-box"></div>
+                <li><a href="">-Nintendo Switch</a></li>
+                <li><a href="">-닌텐도 3DS</a></li>
+                <li><a href="">-고객지원 홈페이지</a></li>
             </ul>
         </div>
     </section>

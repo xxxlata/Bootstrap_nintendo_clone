@@ -6,51 +6,53 @@ ul,li{
     list-style: none;
 }
 
-nav ul{
+#logo{
+    background-color:#e60012;
+    width: 15%;
+    height: 4.1rem;
+}
+#nav-menu ul{
     font-size: 1.3rem;
 }
 
-nav li {
+#nav-menu li {
     padding: 1rem 0;
     width: 20%;
 }
 
-nav i{
+#nav-menu{
+    width: 70%;
+}
+
+#nav i{
     font-size: 1.8rem;
 }
 
-#logo{
-    background-color:#e60012;
-}
-
 #nav-last{
-    position: relative;
+    width: 15%;
+    height: 4.1rem;
 }
 
 #nav-download{
     background-color:#fe7c0a;
-    position: absolute;
-    padding: 8px 0;
-    top: -7px;   
+    width: 70%;
+    padding: 1rem 0;
+    font-weight: bolder;
 }
 
 #nav-download a {
     color: white;
 }
 
-#nav-search{
-    position: absolute;
-    right: 4px;
-    top: 7px;
-    color: white;
-    padding-bottom: 1.2rem;
+#nav-search {
+    width: 30%;
 }
 
 #nav-search a {
     color: black;
 }
 
-nav li:hover {
+#nav li:hover {
     color: #e60012;
     cursor: grab;
 }
@@ -204,4 +206,21 @@ nav li:hover {
     display: block;
 }
 
+#hidden-nav{
+    display: none;
+    background-color: #e60012;
+}
 
+.hidden-shop{
+    background-color: #fe7c0a;
+}
+
+@media screen and (max-width:1196px) {
+    #hidden-nav{
+        display: block;
+    }
+
+    #nav{
+        display: none;
+    }
+}
