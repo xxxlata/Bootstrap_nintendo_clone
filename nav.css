@@ -6,6 +6,11 @@ ul,li{
     list-style: none;
 }
 
+#nav{
+    display: flex;
+    align-items: center;
+}
+
 #logo{
     background-color:#e60012;
     width: 15%;
@@ -246,13 +251,28 @@ ul,li{
     background-color: #e60012;
 }
 
+.hidden-nav-logo img{
+    padding: 0 1rem;
+    width: 75%;
+}
+
+#hidden-nav i{
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: white;
+}
+
 .hidden-shop{
     background-color: #fe7c0a;
+    padding: 0.5rem;
 }
+
 
 @media screen and (max-width:1196px) {
     #hidden-nav{
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #nav{

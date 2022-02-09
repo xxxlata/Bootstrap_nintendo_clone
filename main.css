@@ -42,13 +42,9 @@
     color: gray;
 }
 
-.orange-line{
-    background-image:url(img/orange-line.gif);
-    background-size: cover;
+.orange-line img{
     width: 100%;
-    height: 7rem;
-    padding: 0;
-    margin: 0;
+    height: auto;
 }
 
 #game-title{
@@ -64,6 +60,13 @@
 
 #game-suv{
     margin: 1rem 0;
+}
+
+#game-suv:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #game-suv h6{
@@ -119,10 +122,10 @@
     z-index: 1000;
     background-color: rgb(216, 3, 3);
     color: white;
-    bottom: 3.4rem;
-    right: 14.8rem;
-    padding: 1rem 2rem 0.5rem 2rem;
-    transform: rotate(310deg);
+    bottom: 200%;
+    right: 72%;
+    padding: 2rem 3rem 0.5rem 3rem;
+    transform: rotate(315deg);
 }
 
 .col-sm-6{
@@ -196,7 +199,11 @@
 }
 
 #links{
-    margin: 3rem 8rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
 }
 
 .sns-links > div{
@@ -250,11 +257,64 @@
     #new-update {
         margin: 5rem 1rem 1rem 1rem;
     }
+
+    #update-suv h6{
+        font-size: small;
+    }
+
+    #update-suv p{
+        font-size: 0.8rem;
+    }
+
+
     #game-title {
         margin: 5rem 1rem 1rem 1rem;
     }
+    .orange-line img{
+        height: 6rem;
+        width: auto;
+    }
 
-    .hidden-nav{
+    .new-label{
+        font-size: small;
+    }
+    
+    #service-menu{
+        display: none;
+    }
+
+    #service-menu-hidden{
         display: block;
     }
+
+}
+
+@media screen and (max-width:766px) {
+    .new-label{
+        display: none;
+    }
+
+    #download-block > div{
+        width: 100%;
+        justify-content:flex-start;
+    }
+
+    #links img{
+        width: 60%;
+        padding: 0;
+    }
+
+    .sns-links > div{
+        padding: 0;
+        width: 4rem;
+    }
+
+    .my-icon{
+        text-align: center;
+        margin-left: 10px;
+    }
+    .amiibo-icon{
+        text-align: center;
+    }
+
 }
