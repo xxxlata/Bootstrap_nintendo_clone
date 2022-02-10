@@ -15,25 +15,27 @@ ul,li{
 .hover-nav-search{
     position: absolute;
     display: none;
+    z-index: 1000;
     width: 100%;
     height: auto;
-    background-color: rgba(255, 255, 255, 0.966);
-    top: 4rem;
-    z-index: 1000;
     padding: 1rem;
+    left: 0;
+    top: 4rem;
+    background-color: white;
+
 }
 
 .hover-nav-search input{
     width: 80%;
     height: 2rem;
 }
-
 .hover-nav-search button{
+    width: 3rem;
+    height: 2rem;
+    border: none;
     background-color: #e60012;
     color: white;
-    border: none;
-    width: 6rem;
-    height: auto;
+    font-weight: bolder;
 }
 
 #nav-search:hover .hover-nav-search{
@@ -104,7 +106,38 @@ ul,li{
     position: relative;
 }
 
-.click-menu i:hover #hover-hidden-nav-menu{
+.hidden-hover-nav-search{
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    left: 0;
+    background-color: white;
+
+}
+
+.hidden-hover-nav-search input{
+    width: 80%;
+    height: 2rem;
+}
+.hidden-hover-nav-search button{
+    width: 3rem;
+    height: 2rem;
+    border: none;
+    background-color: #e60012;
+    color: white;
+    font-weight: bolder;
+}
+
+.click-search:hover .hidden-hover-nav-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click-menu:hover #hover-hidden-nav-menu{
     display: block;
 }
 
@@ -115,7 +148,8 @@ ul,li{
     width: 100%;
     height: auto;
     font-weight: bolder;
-    top: 3.4rem;
+    top: 4rem;
+    left: 0;
     background-color: white;
     padding: 0;
 }
@@ -124,38 +158,6 @@ ul,li{
     border: 0.5px solid rgba(199, 199, 199, 0.795);
     padding: 0.5rem;
 }
-
-#hover-hidden-nav-search{
-    position: absolute;
-    display: none;
-    width: 100%;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.966);
-    top: 4rem;
-    z-index: 1000;
-    padding: 1rem;
-}
-
-#hover-hidden-nav-search input{
-    width: 80%;
-    height: 2rem;
-}
-
-#hover-hidden-nav-search button{
-    background-color: #e60012;
-    color: white;
-    border: none;
-    width: 6rem;
-    height: auto;
-}
-
-.click-search:hover #hover-hidden-nav-search{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 
 .hidden-s{
     display: none;
