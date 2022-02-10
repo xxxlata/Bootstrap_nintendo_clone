@@ -8,6 +8,37 @@ ul,li{
 
 #nav{
     display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.hover-nav-search{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.966);
+    top: 4rem;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.hover-nav-search input{
+    width: 80%;
+    height: 2rem;
+}
+
+.hover-nav-search button{
+    background-color: #e60012;
+    color: white;
+    border: none;
+    width: 6rem;
+    height: auto;
+}
+
+#nav-search:hover .hover-nav-search{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -68,6 +99,63 @@ ul,li{
 #nintendo-s{
     position: relative;
 }
+
+#hidden-nav{
+    position: relative;
+}
+
+.click-menu i:hover #hover-hidden-nav-menu{
+    display: block;
+}
+
+#hover-hidden-nav-menu{
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    font-weight: bolder;
+    top: 3.4rem;
+    background-color: white;
+    padding: 0;
+}
+
+#hover-hidden-nav-menu li{
+    border: 0.5px solid rgba(199, 199, 199, 0.795);
+    padding: 0.5rem;
+}
+
+#hover-hidden-nav-search{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.966);
+    top: 4rem;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+#hover-hidden-nav-search input{
+    width: 80%;
+    height: 2rem;
+}
+
+#hover-hidden-nav-search button{
+    background-color: #e60012;
+    color: white;
+    border: none;
+    width: 6rem;
+    height: auto;
+}
+
+.click-search:hover #hover-hidden-nav-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .hidden-s{
     display: none;

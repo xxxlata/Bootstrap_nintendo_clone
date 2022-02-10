@@ -20,10 +20,21 @@
         </div>
         <div class="d-flex align-items-center">
             <div class="d-flex">
-                <div><i class="fas fa-hamburger"></i></div>
-                <div><i class="fas fa-search"></i></div>
+                <div class="click-menu"><i class="fas fa-hamburger"></i></div>
+                <div class="click-search"><i class="fas fa-search"></i></div>
             </div>
             <div class="hidden-shop"><a href=""><i class="fas fa-shopping-basket"></i></a></div>
+        </div>
+        <ul id="hover-hidden-nav-menu">
+            <li>Nintendo Switch</li>
+            <li>닌텐도3DS</li>
+            <li>소프트웨어</li>
+            <li>고객지원</li>
+            <li>News</li>
+        </ul>
+        <div id="hover-hidden-nav-search">
+            <input type="search" name="" id="" placeholder="키워드를 입력해주세요.">
+            <button>검색</button>
         </div>
     </nav>
     <nav id="nav">
@@ -86,11 +97,15 @@
                     <div class="text-center">다운로드<br>구입</div>
                 </a>
             </div>                
-            <div id="nav-search" class="d-flex justify-content-center">
+            <div id="nav-search" class="click-search d-flex justify-content-center">
                 <a href="">
                     <i class="fas fa-search"></i>
                 </a>
             </div>
+        </div>
+        <div class="hover-nav-search">
+            <input type="search" name="" id="" placeholder="키워드를 입력해주세요.">
+            <button>검색</button>
         </div>
     </nav>
     <section class="main-slide">
@@ -429,7 +444,7 @@
             <div>
                 <img src="img/nintendo_logo.png" alt="">
             </div>
-            <div><i class="fas fa-chevron-circle-up"></i></div>
+            <div><a href="#"><i class="fas fa-chevron-circle-up"></i></a></div>
         </div>
     </div>
     <section class="container">
@@ -452,7 +467,7 @@
                 <div class="point-box"></div>
                 <li><a href="">- 회사개요</a></li>
                 <li><a href="">-찾아오시는 길</a></li>
-            </ul>
+            </ul>            
             <ul class="col-sm-3 text-center">본체 / amiibo
                 <div class="point-box"></div>
                 <li><a href="">-Nintendo Switch</a></li>
@@ -476,7 +491,32 @@
         </div>
     </section>
     <div id="service-menu-hidden">
-
+        <div id="hidden-k" >한국닌텐도
+        </div>
+        <ul id="h-k-menu">
+            <li><a href="">- 회사개요</a></li>
+            <li><a href="">-찾아오시는 길</a></li>
+        </ul>
+        <div id="hidden-amiibo">본체 / amiibo</div>
+        <ul id="a-menu">
+            <li><a href="">-Nintendo Switch</a></li>
+            <li><a href="">-New 닌텐도 3DS XL</a></li>
+            <li><a href="">-New 닌텐도 2DS XL</a></li>
+            <li><a href="">-amiibo</a></li>
+        </ul>
+        <div id="hidden-soft">소프트웨어</div>
+        <ul id="s-menu">
+            <li><a href="">-Nintendo Switch 소프트웨어</a></li>
+            <li><a href="">-닌텐도 3DS 소프트웨어</a></li>
+            <li><a href="">-발매 예정 소프트웨어</a></li>
+            <li><a href="">-스마트폰용 앱</a></li>
+        </ul>
+        <div id="hidden-serv">고객지원</div>
+        <ul id="serv-menu">
+            <li><a href="">-Nintendo Switch</a></li>
+            <li><a href="">-닌텐도 3DS</a></li>
+            <li><a href="">-고객지원 홈페이지</a></li>
+        </ul>
     </div>
     <footer>
         <div class="container py-4">
@@ -497,5 +537,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
